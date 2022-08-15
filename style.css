@@ -1,0 +1,125 @@
+body{
+    background-color: #E5E5E5;
+    position: relative;
+}
+.menu-superior{
+    width: 100%;
+    height: 92px;
+    background-color: red;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 21px;
+    box-sizing: border-box;
+    z-index: 1;
+    box-shadow: 1px 1px 5px grey
+}
+
+.menu-superior h1{
+    font-family: 'Righteous';
+    font-size: 44px;
+    color: white;
+    
+}
+.menu-superior h2{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: white;
+}
+.texto1{
+    color: black;
+    margin-top: 10px;
+    
+}
+.texto0{
+    color: black;
+    margin-top: 100px;
+    
+}
+.texto{
+    font-family: 'Righteous';
+    font-size: 26px;
+    margin-left: 19px;
+}
+.caixa-pratos{
+    height: 216px;
+    width: 100%;
+    
+    margin-top: 17px;
+    overflow-x:scroll;
+    display: flex;
+    
+}
+.caixa-pratos2{
+    height: 216px;
+    width: 100%;
+    
+    margin-top: 17px;
+    overflow-x:scroll;
+    display: flex;
+    margin-bottom: 110px;
+    
+}
+.prato{
+    margin-left: 19px;
+    height: 216px;
+    width: 172px;
+    background-color: white;
+    border-radius: 9px;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 5px grey;
+}
+.img-prato{
+    margin-left: 14px;
+    margin-top: 18px;
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.prato h1{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 14px;
+    margin-top: 8px;
+}
+.prato h2{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #A6A6A6;
+    margin-left: 14px;
+    margin-top: 4px;
+}
+.valor-prato{
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.menu-inferior{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-pedido{
+    background-color: #CBCBCB;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-pedido h1{
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-size: 20px;
+}
