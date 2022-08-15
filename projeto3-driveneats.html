@@ -15,45 +15,45 @@
     </div>
     <div class="texto0 texto" >Primeiro, seu prato</div>
     <div class="caixa-pratos">
-      <div onclick="botao()" class="prato">
+      <div onclick="selecionar_prato('Yin-Yang')" class="prato Yin-Yang">
         <img class="img-prato" src="./img/frango.png" />
         <h1>Frango Yin Yang</h1> <h2>Um pouco de batata <br> Um pouco de salada</h2>
         <div class="valor-prato"> 14,90 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_prato('carne')" class="prato carne">
         <img class="img-prato" src="./img/carne-assada.jpeg" />
         <h1>Carne assada</h1> <h2>Um pouco de carne <br> Um pouco de batata</h2>
         <div class="valor-prato"> 16,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_prato('frango-assado')" class="prato frango-assado">
         <img class="img-prato" src="./img/frango-assado.jpg" />
         <h1>Frango assado</h1> <h2>Um pouco de frango <br> Um pouco de batata</h2>
         <div class="valor-prato"> 12,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_prato('frango-ensopado')" class="prato frango-ensopado">
         <img class="img-prato" src="./img/frango-ensopado.png" />
         <h1>Frango ensopado</h1> <h2>Um pouco de frango <br> Um pouco de quiabo</h2>
         <div class="valor-prato"> 13,00</div>
       </div>
     </div>
     <div class="texto1 texto" >Agora, sua bebida</div>
-    <div class="caixa-pratos">
-      <div class="prato">
+    <div class="caixa-bebida">
+      <div onclick="selecionar_bebida('coca-cola')" class="prato coca-cola">
         <img class="img-prato" src="./img/coca-cola.jpg" />
         <h1>Coca-cola</h1> <h2>Coca-cola <br> sem açúcar</h2>
         <div class="valor-prato"> 8,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_bebida('guarana')" class="prato guarana">
         <img class="img-prato" src="./img/guarana.jpg" />
         <h1>Guaraná</h1> <h2>Guaraná <br> refrigerante</h2>
         <div class="valor-prato"> 6,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_bebida('guaraviton')" class="prato guaraviton">
         <img class="img-prato" src="./img/guaraviton.jpg" />
         <h1>Guaraviton</h1> <h2>Guaraná <br> Guaraviton</h2>
         <div class="valor-prato"> 4,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_bebida('vital')" class="prato vital">
         <img class="img-prato" src="./img/vital-guarana.jpg" />
         <h1>Vital Guaraná</h1> <h2>Guaraná <br> Barato</h2>
         <div class="valor-prato"> 2,00 </div>
@@ -61,31 +61,34 @@
     </div>
     <div class="texto1 texto" >Por fim, sua sobremesa</div>
     <div class="caixa-pratos2">
-      <div class="prato">
+      <div onclick="selecionar_sobremesa('pudim')" class="prato pudim">
         <img class="img-prato" src="./img/Pudim.png" />
-        <h1>Pudin</h1> <h2>Pudin <br> Leite condensado</h2>
+        <h1>Pudim</h1> <h2>Pudim <br> Leite condensado</h2>
         <div class="valor-prato"> 5,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_sobremesa('bolo')" class="prato bolo">
         <img class="img-prato" src="./img/bolo.jpg" />
         <h1>Bolo</h1> <h2>Bolo <br> doce de leite</h2>
         <div class="valor-prato"> 5,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_sobremesa('sorvete')" class="prato sorvete">
         <img class="img-prato" src="./img/sorvete.jpg" />
         <h1>Sorvete</h1> <h2>Sorvete <br> Morango</h2>
         <div class="valor-prato"> 3,00 </div>
       </div>
-      <div class="prato">
+      <div onclick="selecionar_sobremesa('milkshake')" class="prato milkshake">
         <img class="img-prato" src="./img/milkshake.jpg" />
         <h1>Milk-Shake</h1> <h2>Milk-Shake <br> escolha seu sabor</h2>
         <div class="valor-prato"> 7,00 </div>
       </div>
     </div>
     <div class="menu-inferior">
-      <div class="botao-pedido">
+      <div onclick="continuar()" class="botao-pedido">
         <h1>Selecione os 3 itens<br> para fechar o pedido </h1>
       </div>
+      <button onclick="continuar(); finalizar()" class="botao-pedido2 escondido">
+        <h1>Fechar Pedido</h1>
+      </button>
     </div>
     <script src="script.js"></script>
   </body>
